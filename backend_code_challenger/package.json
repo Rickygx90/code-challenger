@@ -1,0 +1,32 @@
+{
+  "name": "backend_code_challenger",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Douglas Natha",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "mocha src/test/index.test.js --timeout 5000",
+    "lint": "eslint ."
+  },
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^9.2.1",
+    "nodemon": "^2.0.15",
+    "standard": "^16.0.4"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json",
+    "env": {
+      "jest": true
+    }
+  }
+}
